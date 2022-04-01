@@ -14,3 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+<p align="center"><img src="https://profile-counter.glitch.me/zzuse/count.svg" alt="Hello"></p>
+
+![snake](https://raw.githubusercontent.com/zzuse/zzuse/output/github-snake.svg)
