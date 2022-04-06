@@ -14,8 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<p align="center"><img src="https://profile-counter.glitch.me/zzuse/count.svg" alt="Hello"></p>
 ![snake](https://raw.githubusercontent.com/zzuse/zzuse/output/github-snake.svg)
+<p align="center"><img src="https://profile-counter.glitch.me/zzuse/count.svg" alt="Hello"></p>
 <a href="https://github.com/zzuse/zzuse">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zzuse&hide=java,html,tex&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21&langs_count=3" />
 </a>
