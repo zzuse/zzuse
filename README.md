@@ -15,5 +15,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <p align="center"><img src="https://profile-counter.glitch.me/zzuse/count.svg" alt="Hello"></p>
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=zzuse)](https://github.com/anuraghazra/github-readme-stats)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=zzuse)
 ![snake](https://raw.githubusercontent.com/zzuse/zzuse/output/github-snake.svg)
