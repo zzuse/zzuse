@@ -9,7 +9,7 @@ on:
 
   push:
     branches:
-      - main
+    - main
 
 jobs:
 
@@ -22,14 +22,14 @@ jobs:
     steps:
 
       - name: generate github-contribution-grid-snake.svg
-        uses: Platane/snk@main
+        uses: aelassas/snk/svg-only@main
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: push
+      - name: push github-contribution-grid-snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
