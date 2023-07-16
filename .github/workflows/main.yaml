@@ -9,7 +9,7 @@ on:
 
   push:
     branches:
-      - master
+      - main
 
 jobs:
 
@@ -20,13 +20,13 @@ jobs:
     steps:
 
       - name: generate
-        uses: Platane/snk@master
+        uses: Platane/snk@main
         with:
           github_user_name: ${{ github.repository_owner }}
           svg_out_path: dist/github-snake.svg
 
       - name: push
-        uses: crazy-max/ghaction-github-pages@v2.5.0
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
