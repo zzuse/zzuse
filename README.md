@@ -14,7 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-![snake](https://raw.githubusercontent.com/zzuse/zzuse/output/github-snake.svg)
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
