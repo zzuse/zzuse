@@ -21,11 +21,11 @@ Here are some ideas to get you started:
   />
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/zzuse/zzuse/output/preview/github-contribution-grid-snake.svg"
+    srcset="https://raw.githubusercontent.com/zzuse/zzuse/output/github-contribution-grid-snake-dark.svg?palette=github-dark"
   />
   <img
     alt="github contribution grid snake animation"
-    src="https://raw.githubusercontent.com/zzuse/zzuse/output/github-contribution-grid-snake.svg"
+    src="https://raw.githubusercontent.com/zzuse/zzuse/output/github-contribution-grid-snake-dark.svg"
   />
 </picture>
 <p align="center"><img src="https://profile-counter.glitch.me/zzuse/count.svg" alt="Hello"></p>
