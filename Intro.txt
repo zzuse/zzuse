@@ -1,0 +1,62 @@
+This is a GitHub Actions workflow that generates an animated snake game visualization of your GitHub contribution graph. Here's how it works:
+
+Workflow Triggers
+	Schedule: Runs automatically every 24 hours (cron: "0 */24 * * *")
+	Manual: Can be triggered manually via workflow_dispatch
+	Push: Runs when code is pushed to the main branch
+
+Job Steps
+	Step 1: Generate Snake Animation
+	Uses the Platane/snk action to create two SVG files:
+
+	github-contribution-grid-snake.svg - Light theme version
+	github-contribution-grid-snake-dark.svg - Dark theme version
+	The snake "eats" the contribution squares from your GitHub profile, creating an animated visualization.
+
+	Step 2: Deploy to GitHub Pages
+	Uses crazy-max/ghaction-github-pages to:
+
+	Push the generated SVG files to an output branch
+	Makes them accessible via GitHub Pages
+Usage
+	Once running, you can embed the snake animation in your README using:
+	The workflow automatically updates the animation daily to reflect your latest contributions.
+
+Platane/snk action contains a GitHub Action that generates a snake game animation from a user's GitHub contribution grid. Here's what it does:
+
+Core Functionality
+
+	Fetches GitHub Contributions: Uses the GitHub API to retrieve a user's contribution calendar data (the green squares you see on GitHub profiles)
+
+	Converts to Game Grid: Transforms the contribution data into a game grid where each contribution square becomes a cell that can be "eaten" by the snake
+
+	Solves Snake Path: Uses sophisticated algorithms (in packages/solver/) to compute the optimal path for a snake to traverse the grid and "eat" all the contribution squares in an orderly fashion
+
+	Generates Visual Output: Creates animated visualizations in two formats:
+
+	SVG: Scalable vector graphics with CSS animations
+	GIF: Animated GIF files
+
+Key Components
+
+	packages/action/: Main GitHub Action implementation
+	packages/solver/: Algorithm to find the best snake route through the contribution grid
+	packages/github-user-contribution/: Fetches GitHub user contribution data
+	packages/svg-creator/: Creates SVG animations
+	packages/gif-creator/: Creates GIF animations
+	packages/types/: TypeScript type definitions
+
+Usage
+
+	The action is designed to be used in GitHub workflows to automatically generate snake animations for GitHub profile READMEs. Users can:
+	Specify color palettes (github, github-dark, github-light)
+	Customize snake and dot colors
+	Generate multiple output formats simultaneously
+	Run on schedules to keep animations updated
+	Technical Implementation
+
+	Docker-based: Runs in a Docker container due to native library requirements for GIF generation
+	Monorepo structure: Organized as a workspace with multiple packages
+	TypeScript: Written entirely in TypeScript with proper type definitions
+	Modular design: Each functionality is separated into focused packages
+	This creates those popular animated snake visualizations you often see on GitHub profile READMEs, where a snake appears to "eat" through someone's contribution history in an entertaining way.
